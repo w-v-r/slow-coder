@@ -1,0 +1,10 @@
+{
+  "name": "slow-coder",
+  "description": "Guided pair programming mode — the AI guides and explains, you write the code. Keeps you in the driver's seat while leveraging AI context and review.",
+  "version": "1.0.0",
+  "author": {
+    "name": "William Ryan"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/w-v-r/slow-coder"
+}
