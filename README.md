@@ -26,10 +26,11 @@ questions to keep you thinking. You stay in the driver's seat.
 
 ### Claude Code
 
-Install as a plugin from GitHub:
+Add the marketplace and install:
 
 ```bash
-claude plugin install https://github.com/w-v-r/slow-coder
+claude plugin marketplace add w-v-r/slow-coder
+claude plugin install slow-coder
 ```
 
 Then invoke it in any session:
@@ -38,8 +39,7 @@ Then invoke it in any session:
 /slow-coder
 ```
 
-Or install the skill directly to your user skills directory for use without the
-plugin system:
+Or install the skill directly without the plugin system:
 
 ```bash
 mkdir -p ~/.claude/skills/slow-coder
