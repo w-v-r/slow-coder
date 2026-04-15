@@ -5,7 +5,8 @@
       "Bash(do echo:*)",
       "Read(//Users/williamryan/PROJECTS/slow-coder/**)",
       "Bash(done)",
-      "Bash(git -C /Users/williamryan/PROJECTS/slow-coder remote get-url origin)"
+      "Bash(git -C /Users/williamryan/PROJECTS/slow-coder remote get-url origin)",
+      "Bash(claude plugin:*)"
     ]
   }
 }
