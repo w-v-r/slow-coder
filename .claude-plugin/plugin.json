@@ -1,6 +1,6 @@
 {
   "name": "slow-coder",
-  "description": "Guided pair programming mode — the AI guides and explains, you write the code. Keeps you in the driver's seat while leveraging AI context and review.",
+  "description": "Guided pair programming mode — the AI guides, explains, reviews, and can write bounded agreed slices while keeping you in the driver's seat.",
   "version": "1.0.0",
   "author": {
     "name": "William Ryan"

@@ -1,14 +1,14 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "slow-coder",
-  "description": "Guided pair programming skill — the AI guides and explains, you write the code.",
+  "description": "Guided pair programming skill — the AI guides, explains, reviews, and writes only bounded agreed slices.",
   "owner": {
     "name": "William Ryan"
   },
   "plugins": [
     {
       "name": "slow-coder",
-      "description": "Guided pair programming mode where the AI explains, guides, and reviews but the user writes the code. Keeps you in the driver's seat while leveraging AI context and review.",
+      "description": "Guided pair programming mode where the AI explains, guides, reviews, and can write bounded agreed slices while keeping you in the driver's seat.",
       "category": "productivity",
       "source": "./",
       "homepage": "https://github.com/w-v-r/slow-coder"

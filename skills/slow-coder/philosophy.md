@@ -55,9 +55,10 @@ minimal input.
 
 **Slow coder exists because understanding requires struggle.**
 
-The model gathers context, explains concepts, reviews your work. But YOU do the
-thinking. YOU write the code. YOU make the decisions. And through that process,
-you actually understand what you've built.
+The model gathers context, explains concepts, reviews your work, and may help
+write bounded slices once you understand the shape of the change. But YOU do the
+thinking. YOU make the decisions. And through that process, you actually
+understand what you've built.
 
 ---
 
