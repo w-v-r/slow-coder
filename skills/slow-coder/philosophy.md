@@ -3,8 +3,8 @@
 ## The Problem
 
 AI coding agents give us extraordinary leverage. They can read entire codebases,
-understand complex systems, and produce working code in seconds. This is the
-top-right quadrant: **high leverage**.
+understand complex systems, and produce working code in seconds. But leverage is
+only half the picture.
 
 But high leverage without visibility is dangerous — not because the code is wrong,
 but because **you don't understand the code you're shipping**.
@@ -15,22 +15,41 @@ back to doing everything yourself. No leverage at all.
 Slow coder aims for the sweet spot: **high leverage AND high visibility**.
 
 ```
-HIGH LEVERAGE
-     ↑
-     |
-     |  Autonomous agents        ← High leverage, low visibility
-     |  doing lots of work,        (you don't know what's happening)
-     |  but you don't know
-     |  what's actually
-     |  happening
-     |
-     +----------------------------→ HIGH VISIBILITY
-     |
-     |  You see everything,      ← Low leverage, high visibility
-     |  but you're back to         (you're doing it yourself)
-     |  doing it yourself
-     |
-LOW LEVERAGE
+                                          HIGH LEVERAGE
+                                               ↑
+                                               |
+                                               |
+                                               |          
+                                               |
+                  +----------------------------+----------------------------+
+                  | HIGH LEVERAGE              | HIGH LEVERAGE              |
+                  | LOW VISIBILITY             | HIGH VISIBILITY            |
+                  |                            |                            |
+                  | Autonomous agents          | Slow coder                 |
+                  | doing lots of work         | AI gathers context,        |
+                  | while you lose the thread  | explains trade-offs,       |
+                  |                            | and helps with bounded     |
+                  | "I got the code,           | slices.                    |
+                  |  but I don't understand    |                            |
+                  |  it."                      | "I got the leverage,       |
+                  |                            |  and I still understand    |
+ LOW VISIBILITY   |                            |  it."                      |  HIGH VISIBILITY
+      +----------------------------------------+--------------------------------------+ 
+                  | LOW LEVERAGE               | LOW LEVERAGE               |
+                  | LOW VISIBILITY             | HIGH VISIBILITY            |
+                  |                            |                            |
+                  | Hidden, low-value work     | Manual coding              |
+                  | or unattended churn        | You see every detail,      |
+                  |                            | but you're doing it all    |
+                  | "I don't see much,         | yourself.                  |
+                  |  and not much is gained."  |                            |
+                  |                            | "I understand it,          |
+                  |                            |  but I'm back to typing    |
+                  |                            |  alone."                   |
+                  +----------------------------+----------------------------+
+                                               |
+                                               ↓
+                                          LOW LEVERAGE
 ```
 
 *Framework from [Jacob Deitle](https://www.youtube.com/watch?v=2W5Lew3B1a8)*
