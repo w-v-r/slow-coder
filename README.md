@@ -37,6 +37,20 @@ cd slow-coder
 
 ### Claude Code
 
+#### Quick Install
+
+Install the Claude Code plugin with the Slow Coder banner:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/w-v-r/slow-coder/main/install.sh | sh
+```
+
+Verify it in any Claude Code session:
+
+```
+/slow-coder
+```
+
 #### Plugin
 
 Add the marketplace and install the plugin:
