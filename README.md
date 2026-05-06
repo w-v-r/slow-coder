@@ -1,12 +1,7 @@
- ░▒▓███████▓▒░▒▓█▓▒░      ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░▒▓███████▓▒░  
-░▒▓█▓▒░      ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
-░▒▓█▓▒░      ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
- ░▒▓██████▓▒░░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓██████▓▒░ ░▒▓███████▓▒░  
-       ░▒▓█▓▒░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
-       ░▒▓█▓▒░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
-░▒▓███████▓▒░░▒▓████████▓▒░▒▓██████▓▒░ ░▒▓█████████████▓▒░ ░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░ 
-                                                                                                                             
-                                                                                                                             
+░░ ░▒▓█  ░░ ░▒▓█  ░░ ░▒▓█  
+░▒  ░▒▓ ░▒  ░▒▓ ░▒  ░▒▓
+░▒▓  ░▒ ░▒▓  ░▒ ░▒▓  ░▒
+░▒▓█ ░░  ░▒▓█ ░░  ░▒▓█ ░░
 
 
 # slow-coder
@@ -37,9 +32,14 @@ driver's seat.
 
 ## Install
 
-Choose the install path that matches your agent. The `skills` CLI and Claude
-Code plugin paths do not require cloning this repository. The manual copy paths
-assume you have cloned the repo and are running commands from its root:
+Choose the install path that matches your agent. Like
+[`caveman`](https://github.com/JuliusBrussee/caveman), Slow Coder keeps a
+canonical skill in `skills/slow-coder/SKILL.md` and exposes agent-specific
+adapters for tools that do not consume skills directly.
+
+The `skills` CLI and Claude Code plugin paths do not require cloning this
+repository. The manual copy paths assume you have cloned the repo and are
+running commands from its root:
 
 ```bash
 git clone https://github.com/w-v-r/slow-coder.git
@@ -62,6 +62,20 @@ Verify it in any Claude Code session:
 /slow-coder
 ```
 
+#### Skills CLI
+
+Install the skill directly with the [`skills`](https://skills.sh/docs) CLI:
+
+```bash
+npx skills add w-v-r/slow-coder --global --agent claude-code --skill slow-coder -y
+```
+
+Verify it in Claude Code:
+
+```
+/slow-coder
+```
+
 #### Plugin
 
 Add the marketplace and install the plugin:
@@ -72,21 +86,6 @@ claude plugin install slow-coder
 ```
 
 Verify it in any Claude Code session:
-
-```
-/slow-coder
-```
-
-#### Skills CLI
-
-You can also install the skill directly with the [`skills`](https://skills.sh/docs)
-CLI:
-
-```bash
-npx skills add w-v-r/slow-coder --global --agent claude-code --skill slow-coder -y
-```
-
-Verify it in Claude Code:
 
 ```
 /slow-coder
@@ -106,6 +105,20 @@ cp skills/slow-coder/philosophy.md ~/.claude/skills/slow-coder/philosophy.md
 Then verify with `/slow-coder` in Claude Code.
 
 ### Cursor
+
+Install the skill directly with the [`skills`](https://skills.sh/docs) CLI:
+
+```bash
+npx skills add w-v-r/slow-coder --global --agent cursor --skill slow-coder -y
+```
+
+Verify it by opening Cursor chat and invoking Slow Coder:
+
+```
+@slow-coder
+```
+
+#### Manual Rule Install
 
 For global use across all projects, copy the Cursor rule to your user rules:
 
@@ -193,9 +206,16 @@ slow-coder/
 ├── .claude-plugin/
 │   ├── marketplace.json               # Claude Code marketplace metadata
 │   └── plugin.json                    # Claude Code plugin metadata
+├── .cursor/
+│   ├── rules/
+│   │   └── slow-coder.mdc             # Repo-local Cursor rule
+│   └── skills/
+│       └── slow-coder/
+│           ├── SKILL.md               # Repo-local Cursor skill copy
+│           └── philosophy.md          # Referenced by the Cursor skill copy
 ├── skills/
 │   └── slow-coder/
-│       ├── SKILL.md                   # Claude Code skill definition
+│       ├── SKILL.md                   # Canonical skill definition
 │       └── philosophy.md              # The why behind slow-coder
 ├── adapters/
 │   ├── cursor/
