@@ -29,10 +29,9 @@ driver's seat.
 
 ## Install
 
-Choose the install path that matches your agent. Like
-[`caveman`](https://github.com/JuliusBrussee/caveman), Slow Coder keeps a
-canonical skill in `skills/slow-coder/SKILL.md` and exposes agent-specific
-adapters for tools that do not consume skills directly.
+Choose the install path that matches your agent. Slow Coder keeps a canonical
+skill in `skills/slow-coder/SKILL.md` and exposes agent-specific adapters for
+tools that do not consume skills directly.
 
 The `skills` CLI and Claude Code plugin paths do not require cloning this
 repository. The manual copy paths assume you have cloned the repo and are
