@@ -3,6 +3,9 @@
 
 # slow-coder
 
+
+░▒▓ ░░ ░▒▓█ ░ ▒  ░▒▓
+
 A skill for AI coding agents that shifts the model from **driver** to **navigator**.
 
 You work out each step together. Once the next small slice is clear, the AI can
